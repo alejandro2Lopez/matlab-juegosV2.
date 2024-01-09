@@ -11,5 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+  redirigirALink() {
+    // Redirige a la URL externa al hacer clic en el div
+    window.location.href = 'https://math-table.pages.dev/loginGame';
+  }
 
 }
