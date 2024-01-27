@@ -27,12 +27,13 @@ export class HomeComponent implements OnInit {
        
         console.log('Respuesta:', response);
 
-        this.router.navigate(['/hanoit-tower']);
+      
       })
       .catch(error => {
         // Maneja el error aquí
         console.error('Error:', error);
       });
+      this.router.navigate(['/hanoit-tower']);
   }
   redireccionarASenku(): void {
     const postData = { game: "senku" };
@@ -61,12 +62,13 @@ export class HomeComponent implements OnInit {
        
         console.log('Respuesta:', response);
 
-        this.router.navigate(['/magic-squares']);
+    
       })
       .catch(error => {
         // Maneja el error aquí
         console.error('Error:', error);
       });
+      this.router.navigate(['/magic-squares']);
   }
   redireccionarABasicOperation(): void {
     const postData = { game: "basicOperation" };
