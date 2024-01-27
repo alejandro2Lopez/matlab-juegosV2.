@@ -2,28 +2,28 @@
   <div class="container">
     <!--sreen-gallery-cursual-->
     <div class="row">
-      <div class="col-md-3 top-games game-1" (click)="redireccionarYEjecutarMetodo()">
+      <div class="col-md-3 top-games game-1" (click)="redireccionarAtorresDeHanoi()">
         <h3>Torres de Hanoi</h3>
         <p> Juego matemático inventado en 1883 por el matemático francés Édouard Lucas.
           El juego consiste en pasar todos los discos desde el poste ocupado
           (es decir, el que posee la torre) a uno de los otros postes vacíos.
         </p>
       </div>
-      <div class="col-md-3 top-games game-2" routerLink="/senku">
+      <div class="col-md-3 top-games game-2"  (click)="redireccionarASenku()">
         <h3>Senku</h3>
         <p>Conocido también como Uno Solo, es un juego de tablero creado en 1687 en Francia.
           El juego consiste en ir moviendo una pieza por vez, las piezas solo pueden moverse mediante
           un salto sobre otra pieza. El objetivo es eliminar todas las piezas, dejando una sola en el tablero.
         </p>
       </div>
-      <div class="col-md-3 top-games game-3" routerLink="/magic-squares">
+      <div class="col-md-3 top-games game-3" (click)="redireccionarAMagicSquare()">
         <h3>Cuadrados Mágicos</h3>
         <p>Los cuadrados mágicos se conocen desde la antigüedad (año 2800 a.C.) por los chinos.
           El juego consiste en encontrar los números faltantes en los cuadrados de manera que al sumar
           cualquier línea (vertical, horizontal, diagonal) el resultado será siempre la misma constante.
         </p>
       </div>
-      <div class="col-md-3 top-games game-4" routerLink="/basic-operations">
+      <div class="col-md-3 top-games game-4" (click)="redireccionarABasicOperation()">
         <h3>Operaciones Básicas</h3>
         <p>El juego consiste en acertar la respuesta correcta de las operaciones básicas que se presentan en pantalla.
         </p>
