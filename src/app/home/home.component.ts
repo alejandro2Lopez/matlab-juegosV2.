@@ -45,12 +45,13 @@ export class HomeComponent implements OnInit {
        
         console.log('Respuesta:', response);
 
-        this.router.navigate(['/senku']);
+     
       })
       .catch(error => {
         // Maneja el error aquí
         console.error('Error:', error);
       });
+      this.router.navigate(['/senku']);
   }
  redireccionarAMagicSquare(): void {
     const postData = { game: "magicSquare" };
@@ -80,12 +81,13 @@ export class HomeComponent implements OnInit {
        
         console.log('Respuesta:', response);
 
-        this.router.navigate(['/basic-operations']);
+      
       })
       .catch(error => {
         // Maneja el error aquí
         console.error('Error:', error);
       });
+      this.router.navigate(['/basic-operations']);
   }
   private async postFetch(postData): Promise<any> {
     try {
